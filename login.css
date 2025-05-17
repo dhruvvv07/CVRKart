@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #FF9B7B;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container img {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Welcome Text */
+h1 {
+    color: #FF7B5B;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 30px 0;
+}
+
+/* Form Styles */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.input-field {
+    position: relative;
+    background: #fff;
+}
+
+.input-field i:not(#togglePassword i) {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FF7B5B;
+    font-size: 18px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+    box-sizing: border-box;
+    background: #f8f8f8;
+}
+
+/* Password Field Specific Styles */
+.input-field input[type="password"] {
+    padding-right: 45px;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#togglePassword i {
+    color: #666;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#togglePassword:hover i {
+    color: #FF7B5B;
+}
+
+.input-field input:focus {
+    outline: none;
+    border-color: #FF7B5B;
+    background: #fff;
+}
+
+/* Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background: #FF7B5B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #ff6b47;
+}
+
+button[type="submit"] i {
+    font-size: 18px;
+}
+
+/* Sign up link */
+.signup-link {
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #FF7B5B;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-container {
+        margin: 20px;
+        padding: 30px 20px;
+    }
+
+    .logo-container img {
+        max-width: 150px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

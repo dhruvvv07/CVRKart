@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - CVR kart</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff7e5f; /* Light green background for freshness */
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Product Section */
+.product-section {
+    display: flex;
+    background: white;
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px; /* Softer rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image */
+.product-image {
+    flex: 1;
+    text-align: center;
+}
+
+.product-image img {
+    width: 300px; /* Adjusted size for responsiveness */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Product Details */
+.product-details {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.product-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-details .price {
+    font-size: 24px;
+    color: #b12704; /* Bold red for price */
+    margin: 10px 0;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Better spacing between buttons */
+}
+
+.buttons button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .add-to-cart {
+    background-color: #ff9800; /* Bright orange for add-to-cart */
+    color: white;
+}
+
+.buttons .add-to-cart:hover {
+    background-color: #e68a00;
+}
+
+.buttons .buy-now {
+    background-color: #4CAF50; /* Bright green for buy-now */
+    color: white;
+}
+
+.buttons .buy-now:hover {
+    background-color: #43a047;
+}
+
+/* Section Styles */
+.section {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Features and Nutrients List */
+.features ul, .nutrients ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li, .nutrients ul li {
+    padding: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-section">
+            <div class="product-image">
+                <img src="data:image/jpeg;base64,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" alt="Dhruv's Farm Eggs">
+            </div>
+            <div class="product-details">
+                <h1>Eggs</h1>
+                <p class="price">₹6/pcs</p>
+                <p><strong>Brand:</strong> Dhruv's Farms</p>
+                <p><strong>Quantity:</strong> 6 eggs in a pack</p>
+                <p><strong>Delivery:</strong> Free delivery within 15 mins</p>
+                <div class="buttons">
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="section description">
+            <h2>Product Description</h2>
+            <p>Farm-fresh eggs, rich in protein and essential nutrients.</p>
+        </div>
+        <div class="section features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>100% organic and non-GMO</li>
+                <li>High in fiber for better digestion</li>
+                <li>Low glycemic index, suitable for diabetics</li>
+            </ul>
+        </div>
+        <div class="section nutrients">
+            <h2>Nutritional Information (Per 100g)</h2>
+            <ul>
+                <li>Calories: 111 kcal</li>
+                <li>Carbohydrates: 23g</li>
+               
+            </ul>
+        </div>
+        <div class="section reviews">
+            <h2>Customer Reviews</h2>
+            <p><strong>Dhruv Gupta:</strong> ⭐⭐⭐⭐⭐ "Great quality eggs"</p>
+            <p><strong>Irfan Shaik:</strong> ⭐⭐⭐⭐ "Love it. Will buy again!"</p>
+        </div>
+    </div>
+    
+    <script>
+        function addToCart() {
+            let product = { name: "Refined sugar", price: 50 };
+            localStorage.setItem("cart", JSON.stringify(product));
+            alert("Product added to cart!");
+        }
+        function buyNow() {
+            addToCart();
+            window.location.href = "cart.html";
+        }
+    </script>
+</body>

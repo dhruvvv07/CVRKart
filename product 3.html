@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - CVR kart</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff7e5f; /* Light green background for freshness */
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Product Section */
+.product-section {
+    display: flex;
+    background: white;
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px; /* Softer rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image */
+.product-image {
+    flex: 1;
+    text-align: center;
+}
+
+.product-image img {
+    width: 300px; /* Adjusted size for responsiveness */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Product Details */
+.product-details {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.product-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-details .price {
+    font-size: 24px;
+    color: #b12704; /* Bold red for price */
+    margin: 10px 0;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Better spacing between buttons */
+}
+
+.buttons button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .add-to-cart {
+    background-color: #ff9800; /* Bright orange for add-to-cart */
+    color: white;
+}
+
+.buttons .add-to-cart:hover {
+    background-color: #e68a00;
+}
+
+.buttons .buy-now {
+    background-color: #4CAF50; /* Bright green for buy-now */
+    color: white;
+}
+
+.buttons .buy-now:hover {
+    background-color: #43a047;
+}
+
+/* Section Styles */
+.section {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Features and Nutrients List */
+.features ul, .nutrients ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li, .nutrients ul li {
+    padding: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-section">
+            <div class="product-image">
+                <img src="data:image/jpeg;base64,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" alt="Organic Brown Rice">
+            </div>
+            <div class="product-details">
+                <h1>Cooking Oil</h1>
+                <p class="price">₹50/L</p>
+                <p><strong>Brand:</strong>Conscious Food's Sunflower Oil</p>
+                <p><strong>Weight:</strong> 1 L</p>
+                <p><strong>Delivery:</strong> Free delivery within 15 mins</p>
+                <div class="buttons">
+                    <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="section description">
+            <h2>Product Description</h2>
+            <p>Light and healthy sunflower oil, enriched with essential vitamins and perfect for daily cooking</p>
+        </div>
+        <div class="section features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>100% organic and non-GMO</li>
+                <li>High in fiber for better digestion</li>
+                <li>Low glycemic index, suitable for diabetics</li>
+            </ul>
+        </div>
+        <div class="section nutrients">
+            <h2>Nutritional Information (Per 100g)</h2>
+            <ul>
+                <li>Calories: 111 kcal</li>
+                <li>Carbohydrates: 23g</li>
+               
+            </ul>
+        </div>
+        <div class="section reviews">
+            <h2>Customer Reviews</h2>
+            <p><strong>Dhruv Gupta:</strong> ⭐⭐⭐⭐⭐ "Great quality oil!"</p>
+            <p><strong>Irfan Shaik:</strong> ⭐⭐⭐⭐ "Love it. Will buy again!"</p>
+        </div>
+    </div>
+    
+    <script>
+        function addToCart() {
+            let product = { name: "Refined sugar", price: 50 };
+            localStorage.setItem("cart", JSON.stringify(product));
+            alert("Product added to cart!");
+        }
+        function buyNow() {
+            addToCart();
+            window.location.href = "cart.html";
+        }
+    </script>
+</body>
+</html>

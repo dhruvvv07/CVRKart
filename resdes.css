@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product {
+        width: 150%;
+        margin: 20px 0;
+    }
+}
+/* Styling for Product Image */
+.product-image {
+    width: 15%; /* Makes the image adapt to the container width */
+    max-width: 25px; /* Sets a maximum width to prevent over sizing */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 15px; /* Optional: Rounds the edges for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visual effect */
+    margin: 10px 0; /* Adds space around the image */
+}

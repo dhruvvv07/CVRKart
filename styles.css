@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff7e5f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffe0d3;
+}
+
+/* Hero Section Styles */
+#hero {
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    padding: 25px 5px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#shop-now {
+    background-color: #fff;
+    color: #ff7e5f;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#shop-now:hover {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+/* Featured Products Styles */
+#featured-products {
+    padding: 60px 20px;
+    background-color: #fff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: -50px;
+}
+
+#featured-products h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #ff7e5f;
+}
+
+.product {
+    background-color: #fefefe;
+    width: 280px;
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+.product p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.add-to-cart {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #feb47b;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product {
+        width: 150%;
+        margin: 50px 0;
+    }
+}
+/* Styling for Product Image */
+.product-image {
+    width: 15%; /* Makes the image adapt to the container width */
+    max-width: 25px; /* Sets a maximum width to prevent over sizing */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 15px; /* Optional: Rounds the edges for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visual effect */
+    margin: 10px 0; /* Adds space around the image */
+}

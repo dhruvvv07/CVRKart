@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVRkart - Login</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <!-- Replace the URL below with your actual logo URL -->
+            <img src="C:\Users\DHRUV GUPTA\OneDrive\Pictures\Screenshots\Screenshot 2025-04-21 142600.png" alt="CVRkart Logo">
+        </div>
+        <h1>WELCOME TO CVRKart</h1>
+        <h3>RFP Batch 10</h3>
+        <form id="login-form" action="#" method="post">
+            <div class="input-group">
+                <label for="rollnumber">Roll Number</label>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="rollnumber" name="rollnumber" required placeholder="Enter your roll number">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                    <button type="button" id="togglePassword" aria-label="Toggle password visibility">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <button type="submit">
+                <i class="fas fa-sign-in-alt"></i>
+                LOGIN
+            </button>
+            <p class="signup-link">Don't have an account? <a href="#">Sign up now</a></p>
+        </form>
+    </div>
+    <!-- External JavaScript -->
+    <script src="login.js"></script>
+</body>
+</html>

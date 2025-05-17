@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVRkart - Payment Gateway</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="payment-container">
+            <h1 class="title">Payment Details</h1>
+            
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">₹195.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>GST (5%):</span>
+                    <span id="gst">₹9.75</span>
+                </div>
+                <div class="summary-item">
+                    <span>Delivery Charges:</span>
+                    <span id="delivery">₹50.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total Amount:</span>
+                    <span id="total">₹254.75</span>
+                </div>
+            </div>
+
+            <div class="payment-methods">
+                <h2>Select Payment Method</h2>
+                <div class="method-options">
+                    <div class="method-option" data-method="card">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Credit/Debit Card</span>
+                    </div>
+                    <div class="method-option" data-method="upi">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>UPI</span>
+                    </div>
+                    <div class="method-option" data-method="netbanking">
+                        <i class="fas fa-university"></i>
+                        <span>Net Banking</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-form" id="card-form">
+                <h2>Card Details</h2>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <div class="input-group">
+                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+                        <i class="fab fa-cc-visa"></i>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry">Expiry Date</label>
+                        <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" maxlength="3">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="card-name">Cardholder Name</label>
+                    <input type="text" id="card-name" placeholder="Enter cardholder name">
+                </div>
+            </div>
+
+            <div class="payment-form" id="upi-form" style="display: none;">
+                <h2>UPI Details</h2>
+                <div class="form-group">
+                    <label for="upi-id">UPI ID</label>
+                    <input type="text" id="upi-id" placeholder="Enter UPI ID">
+                </div>
+                <div class="upi-apps">
+                    <div class="upi-app" data-app="gpay">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-google-pay-2038779-1721670.png" alt="Google Pay" class="payment-logo">
+                        <span>Google Pay</span>
+                    </div>
+                    <div class="upi-app" data-app="phonepe">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-phonepe-3691215-3073872.png" alt="PhonePe" class="payment-logo">
+                        <span>PhonePe</span>
+                    </div>
+                    <div class="upi-app" data-app="paytm">
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-paytm-226448.png" alt="Paytm" class="payment-logo">
+                        <span>Paytm</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-form" id="netbanking-form" style="display: none;">
+                <h2>Net Banking</h2>
+                <div class="form-group">
+                    <label for="bank">Select Bank</label>
+                    <select id="bank">
+                        <option value="">Select your bank</option>
+                        <option value="sbi">State Bank of India</option>
+                        <option value="hdfc">HDFC Bank</option>
+                        <option value="icici">ICICI Bank</option>
+                        <option value="axis">Axis Bank</option>
+                        <option value="pnb">Punjab National Bank</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="pay-now-btn" id="pay-now">Pay Now</button>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html> 

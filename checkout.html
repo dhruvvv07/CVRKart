@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVRkart - Shopping Cart</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>CVRkart</h2>
+        <button class="home-btn" onclick="window.location.href='index.html'">
+            <i class="fas fa-home"></i>
+            Home
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="cart-header">
+            <h1 class="title">Shopping Cart</h1>
+            <div class="cart-count">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="item-count">5 Items</span>
+            </div>
+        </div>
+
+        <div class="cart-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Details</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <tr>
+                        <td class="product-info">
+                            <span class="product-name">Refined Sugar</span>
+                            <span class="product-unit">1 kg pack</span>
+                        </td>
+                        <td class="price">₹10.00</td>
+                        <td class="quantity-cell">
+                            <button class="qty-btn" onclick="updateQuantity(this, -1)">-</button>
+                            <span class="quantity">1</span>
+                            <button class="qty-btn" onclick="updateQuantity(this, 1)">+</button>
+                        </td>
+                        <td class="item-total">₹10.00</td>
+                        <td><button class="remove-btn"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="product-info">
+                            <span class="product-name">Eggs</span>
+                            <span class="product-unit">6 pcs</span>
+                        </td>
+                        <td class="price">₹15.00</td>
+                        <td class="quantity-cell">
+                            <button class="qty-btn" onclick="updateQuantity(this, -1)">-</button>
+                            <span class="quantity">1</span>
+                            <button class="qty-btn" onclick="updateQuantity(this, 1)">+</button>
+                        </td>
+                        <td class="item-total">₹15.00</td>
+                        <td><button class="remove-btn"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="product-info">
+                            <span class="product-name">Cooking Oil</span>
+                            <span class="product-unit">1 L bottle</span>
+                        </td>
+                        <td class="price">₹60.00</td>
+                        <td class="quantity-cell">
+                            <button class="qty-btn" onclick="updateQuantity(this, -1)">-</button>
+                            <span class="quantity">1</span>
+                            <button class="qty-btn" onclick="updateQuantity(this, 1)">+</button>
+                        </td>
+                        <td class="item-total">₹60.00</td>
+                        <td><button class="remove-btn"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="price-summary">
+                <div class="summary-header">
+                    <i class="fas fa-receipt"></i>
+                    <h2>Order Summary</h2>
+                </div>
+                <div class="summary-details">
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="subtotal-price">₹85.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>GST (5%)</span>
+                        <span id="gst-amount">₹4.25</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Delivery Charges</span>
+                        <span id="delivery-charges">₹50.00</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total Amount</span>
+                        <span id="final-price">₹139.25</span>
+                    </div>
+                </div>
+                
+                <button class="proceed-btn" onclick="window.location.href='payment.html'">
+                    <i class="fas fa-lock"></i> Proceed to Payment
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed - CVRkart</title>
+    <link rel="stylesheet" href="order-confirmed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="confirmation-container">
+        <div class="confirmation-card">
+            <div class="success-animation">
+                <div class="checkmark">
+                    <i class="fas fa-check"></i>
+                </div>
+                <div class="circle"></div>
+            </div>
+            
+            <h1>Order Confirmed!</h1>
+            <p class="order-number">Order #<span id="order-number">12345</span></p>
+            
+            <div class="order-details">
+                <div class="detail-item">
+                    <i class="fas fa-box"></i>
+                    <span>Your order will be delivered in 3-5 business days</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Order confirmation has been sent to your email</span>
+                </div>
+                </div>
+            </div>
+            
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-item">
+                    <span>Items:</span>
+                    <span id="item-count">3</span>
+                </div>
+                <div class="summary-item">
+                    <span>Total Amount:</span>
+                    <span id="total-amount">₹254.75</span>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="rfp.html" class="btn continue-shopping">
+                    <i class="fas fa-shopping-bag"></i>
+                    Continue Shopping
+                </a>
+                <a href="#" class="btn track-order">
+                    <i class="fas fa-truck"></i>
+                    Track Order
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="order-confirmed.js"></script>
+</body>
+</html> 
