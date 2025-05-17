@@ -33,11 +33,11 @@ CVRKart is a simple, responsive grocery shopping site designed to offer a fast, 
 ### Login Page
 ![Login Page](login.jpg)
 
-### Payment Gateway
-![Payment Page](relative/path/to/payment-screenshot.png)
+### Shopping Cart
+![Payment Page](cart.jpg)
 
 ### Deployment (Railway)
-![Deployment Screenshot](images/railway-deployment.png)
+![Deployment Screenshot](deploy.jpg)
 
 ---
 
