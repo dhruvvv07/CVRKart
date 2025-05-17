@@ -31,7 +31,7 @@ CVRKart is a simple, responsive grocery shopping site designed to offer a fast, 
 ## Screenshots
 
 ### Login Page
-![Login Page](relative/path/to/login.jpg)
+![Login Page](login.jpg)
 
 ### Payment Gateway
 ![Payment Page](relative/path/to/payment-screenshot.png)
