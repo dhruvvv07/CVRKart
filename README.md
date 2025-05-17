@@ -8,23 +8,23 @@ CVRKart is a simple, responsive grocery shopping site designed to offer a fast, 
 
 ## 🚀 Features
 
-- Clean and minimal UI
-- Responsive design for all devices
-- Roll-number-based login system
-- Cart with product selection and order simulation
-- Simulated payment gateway
-- Deployment on Railway
+- 🔍 **Minimalist UI** — Clean, intuitive layout optimized for quick access
+- 📱 **Responsive Design** — Works seamlessly on desktops, tablets, and mobiles
+- 🔐 **Secure Login** — Roll-number based login for user-specific access
+- ⚡ **Lightweight Architecture** — Optimized for low-bandwidth and basic devices
+- 🛒 **Cart Functionality** — Simulated cart and checkout flow
+- 🚀 **Future Ready** — Backend support planned for inventory, payments, and analytics
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 | Layer       | Technology                         |
 |-------------|------------------------------------|
 | Frontend    | HTML5, CSS3, JavaScript, Bootstrap |
-| Backend     | *(Planned)* Flask / Firebase       |
-| Hosting     | [Railway](https://railway.app)     |
-
+| Backend     | Python Flask (planned)             |
+| Database    | SQLite (dev), PostgreSQL (planned) |
+| Hosting     | [Railway](https://railway.app)      |
 ---
 
 ## 📸 Screenshots
@@ -40,10 +40,11 @@ CVRKart is a simple, responsive grocery shopping site designed to offer a fast, 
 
 ---
 
-## 🌐 Live Deployment
+## 🧪 Testing
 
-This project has been deployed via [Railway](https://railway.app), a cloud platform for modern web apps.  
-> 📦 Deployment: `https://web-production-db28a.up.railway.app` *(replace with your actual live URL if available)*
+- ✅ Functional testing (forms, navigation, cart)
+- ✅ Cross-browser compatibility
+- ✅ Responsive on various devices
 
 ---
 
