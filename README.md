@@ -6,49 +6,50 @@ CVRKart is a simple, responsive grocery shopping site designed to offer a fast, 
 
 ---
 
-## 🚀 Features
+## Features
 
-- 🔍 **Minimalist UI** — Clean, intuitive layout optimized for quick access
-- 📱 **Responsive Design** — Works seamlessly on desktops, tablets, and mobiles
-- 🔐 **Secure Login** — Roll-number based login for user-specific access
-- ⚡ **Lightweight Architecture** — Optimized for low-bandwidth and basic devices
-- 🛒 **Cart Functionality** — Simulated cart and checkout flow
-- 🚀 **Future Ready** — Backend support planned for inventory, payments, and analytics
+- Minimalist UI — Clean, intuitive layout optimized for quick access
+- Responsive Design — Works seamlessly on desktops, tablets, and mobiles
+- Secure Login — Roll-number based login for user-specific access
+- Lightweight Architecture — Optimized for low-bandwidth and basic devices
+- Cart Functionality — Simulated cart and checkout flow
+- Future Ready — Backend support planned for inventory, payments, and analytics
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer       | Technology                         |
 |-------------|------------------------------------|
 | Frontend    | HTML5, CSS3, JavaScript, Bootstrap |
 | Backend     | Python Flask (planned)             |
 | Database    | SQLite (dev), PostgreSQL (planned) |
-| Hosting     | [Railway](https://railway.app)      |
+| Hosting     | [Railway](https://railway.app)     |
+
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### 🔐 Login Page
+### Login Page
 ![Login Page](relative/path/to/login-screenshot.png)
 
-### 💳 Payment Gateway
+### Payment Gateway
 ![Payment Page](relative/path/to/payment-screenshot.png)
 
-### 🚀 Deployment (Railway)
+### Deployment (Railway)
 ![Deployment Screenshot](images/railway-deployment.png)
 
 ---
 
-## 🧪 Testing
+## Testing
 
-- ✅ Functional testing (forms, navigation, cart)
-- ✅ Cross-browser compatibility
-- ✅ Responsive on various devices
+- Functional testing (forms, navigation, cart)
+- Cross-browser compatibility
+- Responsive on various devices
 
 ---
 
-## 📌 Future Scope
+## Future Scope
 
 - Backend integration with real authentication
 - Payment gateway (Razorpay, Stripe)
@@ -57,9 +58,8 @@ CVRKart is a simple, responsive grocery shopping site designed to offer a fast, 
 
 ---
 
-## 👨‍💻 Authors
+## Authors
 
 - Dhruv Gupta
 - B. Hruday Tarang 
-- Shaik Irfan 
-
+- Shaik Irfan
